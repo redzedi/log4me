@@ -1,0 +1,18 @@
+{
+	"appenders":[
+		{
+			"name":"my-stdout",
+			"fqcn":"log4me.core.appenders.impl.MyStdOut"
+		}
+	],
+	 "loggers":[
+		{
+			"name":"a.b.c",
+			"level":"ERROR"
+		}
+	 ],
+	 "rootLogger":{
+		"level":"INFO",
+		"appenderRefs":[ "my-stdout" ]
+	 }
+}
